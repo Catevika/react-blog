@@ -4,6 +4,8 @@ https://github.com/gitdagray/react_resources
 
 It is available only in development mode because it deals with a local json file as database
 
+It uses the [easy-peasy](https://easy-peasy.vercel.app/) npm package to make using Redux easier
+
 <br />
 
 # How to use
