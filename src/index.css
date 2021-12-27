@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
 	margin: 0;
@@ -12,7 +12,7 @@ html {
 
 body {
 	min-height: 100vh;
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	display: flex;
@@ -26,7 +26,7 @@ body {
 	align-items: center;
 }
 
-.App {
+.app {
 	width: 100%;
 	max-width: 800px;
 	height: 100vh;
@@ -38,8 +38,8 @@ body {
 	box-shadow: 0px 0px 15px gray;
 }
 
-.Header,
-.Footer {
+.header,
+.footer {
 	width: 100%;
 	background-color: #66d8f5;
 	padding: 1rem;
@@ -48,21 +48,21 @@ body {
 	align-items: center;
 }
 
-.Header h1 {
+.header h1 {
 	font-size: 1.5rem;
 }
 
-.Header svg {
+.header svg {
 	font-size: 2rem;
 }
 
-.Footer {
+.footer {
 	padding: 0.75rem;
 	display: grid;
 	place-content: center;
 }
 
-.Nav {
+.nav {
 	width: 100%;
 	background-color: #333;
 	display: flex;
@@ -71,13 +71,13 @@ body {
 	align-items: flex-start;
 }
 
-.searchForm {
+.search-form {
 	width: 80%;
 	padding: 1rem 0 0 0.75rem;
 }
 
-.searchForm input[type='text'] {
-	font-family: 'Open Sans', sans-serif;
+.search-form input[type="text"] {
+	font-family: "Open Sans", sans-serif;
 	width: 100%;
 	min-height: 48px;
 	font-size: 1rem;
@@ -86,12 +86,12 @@ body {
 	outline: none;
 }
 
-.searchForm label {
+.search-form label {
 	position: absolute;
 	left: -99999px;
 }
 
-.Nav ul {
+.nav ul {
 	color: #fff;
 	list-style-type: none;
 	display: flex;
@@ -99,38 +99,38 @@ body {
 	align-items: center;
 }
 
-.Nav li {
+.nav li {
 	padding: 1rem;
 }
 
-.Nav li:hover,
-.Nav li:focus {
+.nav li:hover,
+.nav li:focus {
 	padding: 1rem;
 }
 
-.Nav li a {
+.nav li a {
 	color: #fff;
 	text-decoration: none;
 }
 
-.Nav li:hover,
-.Nav li:focus,
-.Nav li:hover a,
-.Nav li:focus a {
+.nav li:hover,
+.nav li:focus,
+.nav li:hover a,
+.nav li:focus a {
 	background-color: #eee;
 	color: #333;
 }
 
-.Nav li:hover a,
-.Nav li:focus a {
+.nav li:hover a,
+.nav li:focus a {
 	cursor: pointer;
 }
 
-.Home,
-.NewPost,
-.PostPage,
-.About,
-.Missing {
+.home,
+.new-post,
+.post-page,
+.about,
+.missing {
 	width: 100%;
 	flex-grow: 1;
 	padding: 1rem;
@@ -144,12 +144,12 @@ body {
 	border-bottom: 1px solid lightgray;
 }
 
-.Home .post a {
+.home .post a {
 	text-decoration: none;
 }
 
-.Home .post a,
-.Home .post a:visited {
+.home .post a,
+.home .post a:visited {
 	color: #000;
 }
 
@@ -161,27 +161,27 @@ body {
 	border-bottom: none;
 }
 
-.postDate {
+.post-date {
 	font-size: 0.75rem;
 	margin-top: 0.25rem;
 }
 
-.postBody {
+.post-body {
 	margin: 1rem 0;
 }
 
-.newPostForm {
+.new-post-form {
 	display: flex;
 	flex-direction: column;
 }
 
-.newPostForm label {
+.new-post-form label {
 	margin-top: 1rem;
 }
 
-.newPostForm input[type='text'],
-.newPostForm textarea {
-	font-family: 'Open Sans', sans-serif;
+.new-post-form input[type="text"],
+.new-post-form textarea {
+	font-family: "Open Sans", sans-serif;
 	width: 100%;
 	min-height: 48px;
 	font-size: 1rem;
@@ -191,11 +191,11 @@ body {
 	outline: none;
 }
 
-.newPostForm textarea {
+.new-post-form textarea {
 	height: 100px;
 }
 
-.newPostForm button {
+.new-post-form button {
 	margin-top: 1rem;
 	height: 48px;
 	min-width: 48px;
@@ -205,13 +205,13 @@ body {
 	cursor: pointer;
 }
 
-.Missing p,
-.PostPage p,
-.NewPost p {
+.missing p,
+.post-page p,
+.new-post p {
 	margin-top: 1rem;
 }
 
-.PostPage button {
+.post-page button {
 	height: 48px;
 	min-width: 48px;
 	border-radius: 0.25rem;
@@ -222,15 +222,15 @@ body {
 	cursor: pointer;
 }
 
-.deleteButton {
+.delete-button {
 	background-color: red;
 }
 
-.editButton {
+.edit-button {
 	background-color: #333;
 }
 
-.statusMsg {
+.status-msg {
 	margin-top: 2rem;
 }
 
@@ -239,45 +239,45 @@ body {
 		font-size: 22px;
 	}
 
-	.Header h1 {
+	.header h1 {
 		font-size: 2rem;
 	}
 
-	.Nav {
+	.nav {
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: space-between;
 		align-items: center;
 	}
 
-	.Nav ul {
+	.nav ul {
 		text-align: right;
 	}
 
-	.Nav li:hover,
-	.Nav li:focus,
-	.Nav li:hover a,
-	.Nav li:focus a {
+	.nav li:hover,
+	.nav li:focus,
+	.nav li:hover a,
+	.nav li:focus a {
 		background-color: #eee;
 		color: #333;
 	}
 
-	.searchForm {
+	.search-form {
 		width: 50%;
 		padding: 0.5rem 0;
 	}
 
-	.searchForm input[type='text'] {
+	.search-form input[type="text"] {
 		margin-left: 0.5rem;
 	}
 
-	.newPostForm textarea {
+	.new-post-form textarea {
 		height: 300px;
 	}
 }
 
 @media only screen and (min-width: 992px) {
-	.Header svg {
+	.header svg {
 		font-size: 3rem;
 	}
 }

@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { useStoreState, useStoreActions } from 'easy-peasy';
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { useStoreState, useStoreActions } from "easy-peasy";
 
 const Nav = () => {
 	const posts = useStoreState((state) => state.posts);
@@ -21,8 +21,8 @@ const Nav = () => {
 	}, [posts, search, setSearchResults]);
 
 	return (
-		<nav className='Nav'>
-			<form className='searchForm' onSubmit={(e) => e.preventDefault()}>
+		<nav className='nav'>
+			<form className='search-form' onSubmit={(e) => e.preventDefault()}>
 				<label htmlFor='search'>Search Posts</label>
 				<input
 					id='search'
@@ -37,10 +37,10 @@ const Nav = () => {
 					<Link to='/'>Home</Link>
 				</li>
 				<li>
-					<Link to='/post'>Post</Link>
+					<Link to='post'>Post</Link>
 				</li>
 				<li>
-					<Link to='/about'>About</Link>
+					<Link to='about'>About</Link>
 				</li>
 			</ul>
 		</nav>
